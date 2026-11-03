@@ -1,0 +1,21 @@
+{
+    // Checks the parts that need neither Vencord nor Electron: the server and the tests.
+    // The plugin's Vencord-facing files are checked by Vencord's own `tsc --noEmit`.
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "Preserve",
+        "moduleResolution": "bundler",
+        "lib": ["ES2022", "DOM"],
+        "types": ["bun"],
+        "strict": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "verbatimModuleSyntax": true,
+        "exactOptionalPropertyTypes": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true
+    },
+    "include": ["plugin/server", "plugin/shared", "plugin/discord/Message.ts", "test"]
+}

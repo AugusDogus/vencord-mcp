@@ -1,0 +1,13 @@
+{
+    "name": "vencord-mcp",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "test": "bun test",
+        "typecheck": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@types/bun": "1.4.4",
+        "typescript": "6.0.3"
+    }
+}

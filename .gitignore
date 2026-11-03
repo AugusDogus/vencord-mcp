@@ -1,0 +1,5 @@
+node_modules
+*.tsbuildinfo
+.DS_Store
+# Written by scripts/link.sh for a local Vencord checkout
+/plugin/tsconfig.json
